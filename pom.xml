@@ -224,6 +224,15 @@
     </dependencyManagement>
 
     <build>
+        <resources>
+            <resource>
+                <!--指定resources插件处理哪个目录下的资源文件-->
+                <directory>src/main/resources</directory>
+                <!--打开资源过滤功能-->
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+
         <pluginManagement>
             <plugins>
                 <plugin>
@@ -271,6 +280,10 @@
                             </goals>
                         </execution>
                     </executions>
+                    <configuration>
+                        <keyname>46A46638E7A4C988603988FC9A698D0385DD4339</keyname>
+                        <passphrase>dreamLi0812!@#</passphrase>
+                    </configuration>
                 </plugin>
 
                 <plugin>
