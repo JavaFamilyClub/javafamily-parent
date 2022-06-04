@@ -335,7 +335,12 @@
                         <includeTestSourceDirectory>true</includeTestSourceDirectory>
                         <encoding>${project.build.sourceEncoding}</encoding>
                         <consoleOutput>true</consoleOutput>
+                        <logViolationsToConsole>true</logViolationsToConsole>
                         <failsOnError>false</failsOnError>
+                        <failOnViolation>false</failOnViolation>
+                        <violationSeverity>warning</violationSeverity>
+                        <linkXRef>false</linkXRef>
+                        <skip>true</skip>
                     </configuration>
                     <executions>
                         <execution>
@@ -409,7 +414,10 @@
                     <includeTestSourceDirectory>true</includeTestSourceDirectory>
                     <encoding>${project.build.sourceEncoding}</encoding>
                     <consoleOutput>true</consoleOutput>
-                    <failsOnError>false</failsOnError>
+                    <failsOnError>true</failsOnError>
+                    <failOnViolation>true</failOnViolation>
+                    <violationSeverity>warning</violationSeverity>
+                    <linkXRef>false</linkXRef>
                 </configuration>
                 <executions>
                     <execution>
