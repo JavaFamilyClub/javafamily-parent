@@ -375,9 +375,10 @@
                         <effort>Default</effort>
                         <!-- Low、Medium 和 High (Low最严格) -->
                         <threshold>Medium</threshold>
-                        <failOnError>true</failOnError>
+                        <failOnError>false</failOnError>
                         <includeTests>true</includeTests>
                         <excludeFilterFile>codeStyle/findbugs-exclude-bugs.xml</excludeFilterFile>
+                        <skip>true</skip>
                     </configuration>
                     <executions>
                         <execution>
