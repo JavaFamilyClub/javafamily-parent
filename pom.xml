@@ -335,7 +335,7 @@
                         <includeTestSourceDirectory>true</includeTestSourceDirectory>
                         <encoding>${project.build.sourceEncoding}</encoding>
                         <consoleOutput>true</consoleOutput>
-                        <failsOnError>true</failsOnError>
+                        <failsOnError>false</failsOnError>
                     </configuration>
                     <executions>
                         <execution>
