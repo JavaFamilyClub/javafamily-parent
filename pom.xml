@@ -141,6 +141,14 @@
 
             <dependency>
                 <groupId>club.javafamily</groupId>
+                <artifactId>javafamily-utils-bom</artifactId>
+                <version>${javafamily-core.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+
+            <dependency>
+                <groupId>club.javafamily</groupId>
                 <artifactId>javafamily-core</artifactId>
                 <version>${javafamily-core.version}</version>
             </dependency>
