@@ -145,6 +145,12 @@
                 <version>${javafamily-core.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
+                <exclusions>
+                    <exclusion>
+                        <groupId>club.javafamily</groupId>
+                        <artifactId>javafamily-parent</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
 
             <dependency>
