@@ -55,7 +55,8 @@
         <jackson.jts.version>1.0-2.7</jackson.jts.version>
         <hibernate-validator.version>6.0.16.Final</hibernate-validator.version>
         <mongodb-plus.version>1.0.0.RELEASE</mongodb-plus.version>
-        <javafamily-core.version>2.3.2-SNAPSHOT</javafamily-core.version>
+        <javafamily.core.version>2.3.2-SNAPSHOT</javafamily.core.version>
+        <javafamily.utils.version>2.3.2-SNAPSHOT</javafamily.utils.version>
     </properties>
 
     <!-- 许可证信息 -->
@@ -142,13 +143,61 @@
             <dependency>
                 <groupId>club.javafamily</groupId>
                 <artifactId>javafamily-core</artifactId>
-                <version>${javafamily-core.version}</version>
+                <version>${javafamily.core.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>club.javafamily</groupId>
                 <artifactId>javafamily-resttemplate-starter</artifactId>
-                <version>${javafamily-core.version}</version>
+                <version>${javafamily.core.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>club.javafamily</groupId>
+                <artifactId>javafamily-utils-core</artifactId>
+                <version>${javafamily.utils.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>club.javafamily</groupId>
+                <artifactId>javafamily-utils-date</artifactId>
+                <version>${javafamily.utils.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>club.javafamily</groupId>
+                <artifactId>javafamily-utils-all</artifactId>
+                <version>${javafamily.utils.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>club.javafamily</groupId>
+                <artifactId>javafamily-utils-encryp</artifactId>
+                <version>${javafamily.utils.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>club.javafamily</groupId>
+                <artifactId>javafamily-utils-ftp</artifactId>
+                <version>${javafamily.utils.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>club.javafamily</groupId>
+                <artifactId>javafamily-utils-geo</artifactId>
+                <version>${javafamily.utils.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>club.javafamily</groupId>
+                <artifactId>javafamily-utils-network</artifactId>
+                <version>${javafamily.utils.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>club.javafamily</groupId>
+                <artifactId>javafamily-utils-reflect</artifactId>
+                <version>${javafamily.utils.version}</version>
             </dependency>
 
             <dependency>
