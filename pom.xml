@@ -60,6 +60,8 @@
         <itext.pdf.version>7.1.13</itext.pdf.version>
         <javafamily.core.version>2.3.2-SNAPSHOT</javafamily.core.version>
         <javafamily.utils.version>2.3.2-SNAPSHOT</javafamily.utils.version>
+        <tencent.sdk.version>3.1.111</tencent.sdk.version>
+        <ucloud.sms.version>0.8.4.4-release</ucloud.sms.version>
     </properties>
 
     <!-- 许可证信息 -->
@@ -339,6 +341,18 @@
                 <artifactId>junit-jupiter</artifactId>
                 <version>${junit5.version}</version>
                 <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.tencentcloudapi</groupId>
+                <artifactId>tencentcloud-sdk-java</artifactId>
+                <version>${tencent.sdk.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.ucloud</groupId>
+                <artifactId>ucloud-sdk-java-usms</artifactId>
+                <version>${ucloud.sms.version}</version>
             </dependency>
 
         </dependencies>
