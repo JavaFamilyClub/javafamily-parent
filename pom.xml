@@ -60,8 +60,10 @@
         <pdf.itext.version>7.1.13</pdf.itext.version>
         <javafamily.core.version>2.3.2-SNAPSHOT</javafamily.core.version>
         <javafamily.utils.version>2.3.2-SNAPSHOT</javafamily.utils.version>
+        <notification.manager.version>2.3.2-SNAPSHOT</notification.manager.version>
         <tencent.sdk.version>3.1.111</tencent.sdk.version>
         <ucloud.sms.version>0.8.4.4-release</ucloud.sms.version>
+        <security.jasypt.version>3.0.4</security.jasypt.version>
     </properties>
 
     <!-- 许可证信息 -->
@@ -228,6 +230,36 @@
             </dependency>
 
             <dependency>
+                <groupId>club.javafamily</groupId>
+                <artifactId>feishu-notification-spring-boot-starter</artifactId>
+                <version>${notification.manager.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>club.javafamily</groupId>
+                <artifactId>dingtalk-notification-spring-boot-starter</artifactId>
+                <version>${notification.manager.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>club.javafamily</groupId>
+                <artifactId>ucloud-sms-notification-spring-boot-starter</artifactId>
+                <version>${notification.manager.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>club.javafamily</groupId>
+                <artifactId>tencent-sms-notification-spring-boot-starter</artifactId>
+                <version>${notification.manager.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>club.javafamily</groupId>
+                <artifactId>email-notification-spring-boot-starter</artifactId>
+                <version>${notification.manager.version}</version>
+            </dependency>
+
+            <dependency>
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-swagger2</artifactId>
                 <version>${swagger.version}</version>
@@ -364,6 +396,12 @@
                 <groupId>cn.ucloud</groupId>
                 <artifactId>ucloud-sdk-java-usms</artifactId>
                 <version>${ucloud.sms.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.ulisesbocchio</groupId>
+                <artifactId>jasypt-spring-boot-starter</artifactId>
+                <version>${security.jasypt.version}</version>
             </dependency>
 
         </dependencies>
