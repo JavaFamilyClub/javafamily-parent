@@ -159,6 +159,14 @@
 
             <dependency>
                 <groupId>club.javafamily</groupId>
+                <artifactId>javafamily-utils-bom</artifactId>
+                <version>${javafamily.utils.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>club.javafamily</groupId>
                 <artifactId>javafamily-core</artifactId>
                 <version>${javafamily.core.version}</version>
             </dependency>
@@ -169,65 +177,65 @@
                 <version>${javafamily.core.version}</version>
             </dependency>
 
-            <dependency>
-                <groupId>club.javafamily</groupId>
-                <artifactId>javafamily-utils-core</artifactId>
-                <version>${javafamily.utils.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>club.javafamily</groupId>-->
+<!--                <artifactId>javafamily-utils-core</artifactId>-->
+<!--                <version>${javafamily.utils.version}</version>-->
+<!--            </dependency>-->
 
-            <dependency>
-                <groupId>club.javafamily</groupId>
-                <artifactId>javafamily-utils-date</artifactId>
-                <version>${javafamily.utils.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>club.javafamily</groupId>-->
+<!--                <artifactId>javafamily-utils-date</artifactId>-->
+<!--                <version>${javafamily.utils.version}</version>-->
+<!--            </dependency>-->
 
-            <dependency>
-                <groupId>club.javafamily</groupId>
-                <artifactId>javafamily-utils-all</artifactId>
-                <version>${javafamily.utils.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>club.javafamily</groupId>-->
+<!--                <artifactId>javafamily-utils-all</artifactId>-->
+<!--                <version>${javafamily.utils.version}</version>-->
+<!--            </dependency>-->
 
-            <dependency>
-                <groupId>club.javafamily</groupId>
-                <artifactId>javafamily-utils-encryp</artifactId>
-                <version>${javafamily.utils.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>club.javafamily</groupId>-->
+<!--                <artifactId>javafamily-utils-encryp</artifactId>-->
+<!--                <version>${javafamily.utils.version}</version>-->
+<!--            </dependency>-->
 
-            <dependency>
-                <groupId>club.javafamily</groupId>
-                <artifactId>javafamily-utils-ftp</artifactId>
-                <version>${javafamily.utils.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>club.javafamily</groupId>-->
+<!--                <artifactId>javafamily-utils-ftp</artifactId>-->
+<!--                <version>${javafamily.utils.version}</version>-->
+<!--            </dependency>-->
 
-            <dependency>
-                <groupId>club.javafamily</groupId>
-                <artifactId>javafamily-utils-geo</artifactId>
-                <version>${javafamily.utils.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>club.javafamily</groupId>-->
+<!--                <artifactId>javafamily-utils-geo</artifactId>-->
+<!--                <version>${javafamily.utils.version}</version>-->
+<!--            </dependency>-->
 
-            <dependency>
-                <groupId>club.javafamily</groupId>
-                <artifactId>javafamily-utils-network</artifactId>
-                <version>${javafamily.utils.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>club.javafamily</groupId>-->
+<!--                <artifactId>javafamily-utils-network</artifactId>-->
+<!--                <version>${javafamily.utils.version}</version>-->
+<!--            </dependency>-->
 
-            <dependency>
-                <groupId>club.javafamily</groupId>
-                <artifactId>javafamily-utils-reflect</artifactId>
-                <version>${javafamily.utils.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>club.javafamily</groupId>-->
+<!--                <artifactId>javafamily-utils-reflect</artifactId>-->
+<!--                <version>${javafamily.utils.version}</version>-->
+<!--            </dependency>-->
 
-            <dependency>
-                <groupId>club.javafamily</groupId>
-                <artifactId>javafamily-utils-file</artifactId>
-                <version>${javafamily.utils.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>club.javafamily</groupId>-->
+<!--                <artifactId>javafamily-utils-file</artifactId>-->
+<!--                <version>${javafamily.utils.version}</version>-->
+<!--            </dependency>-->
 
-            <dependency>
-                <groupId>club.javafamily</groupId>
-                <artifactId>javafamily-utils-pdf-itext</artifactId>
-                <version>${javafamily.utils.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>club.javafamily</groupId>-->
+<!--                <artifactId>javafamily-utils-pdf-itext</artifactId>-->
+<!--                <version>${javafamily.utils.version}</version>-->
+<!--            </dependency>-->
 
             <dependency>
                 <groupId>club.javafamily</groupId>
