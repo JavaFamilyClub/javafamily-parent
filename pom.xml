@@ -64,6 +64,7 @@
         <tencent.sdk.version>3.1.111</tencent.sdk.version>
         <ucloud.sms.version>0.8.4.4-release</ucloud.sms.version>
         <security.jasypt.version>3.0.4</security.jasypt.version>
+        <poi-tl.version>1.11.1</poi-tl.version>
     </properties>
 
     <!-- 许可证信息 -->
@@ -410,6 +411,11 @@
                 <version>${security.jasypt.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.deepoove</groupId>
+                <artifactId>poi-tl</artifactId>
+                <version>${poi-tl.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
