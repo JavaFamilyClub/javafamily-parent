@@ -133,6 +133,7 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- spring boot dependencies -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
@@ -141,7 +142,7 @@
                 <scope>import</scope>
             </dependency>
 
-            <!-- spring cloud 依赖 -->
+            <!-- spring cloud dependencies -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -149,11 +150,30 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!-- spring cloud alibaba 依赖 -->
+
+            <!-- spring cloud alibaba dependencies -->
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
                 <version>${spring-cloud-alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- javafamily utils dependencies -->
+            <dependency>
+                <groupId>club.javafamily</groupId>
+                <artifactId>javafamily-utils-bom</artifactId>
+                <version>${javafamily.utils.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- javafamily notification manager dependencies -->
+            <dependency>
+                <groupId>club.javafamily</groupId>
+                <artifactId>notification-manager-bom</artifactId>
+                <version>${notification.manager.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -168,102 +188,6 @@
                 <groupId>club.javafamily</groupId>
                 <artifactId>javafamily-resttemplate-starter</artifactId>
                 <version>${javafamily.core.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>club.javafamily</groupId>
-                <artifactId>javafamily-utils-core</artifactId>
-                <version>${javafamily.utils.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>club.javafamily</groupId>
-                <artifactId>javafamily-utils-date</artifactId>
-                <version>${javafamily.utils.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>club.javafamily</groupId>
-                <artifactId>javafamily-utils-all</artifactId>
-                <version>${javafamily.utils.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>club.javafamily</groupId>
-                <artifactId>javafamily-utils-encryp</artifactId>
-                <version>${javafamily.utils.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>club.javafamily</groupId>
-                <artifactId>javafamily-utils-ftp</artifactId>
-                <version>${javafamily.utils.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>club.javafamily</groupId>
-                <artifactId>javafamily-utils-geo</artifactId>
-                <version>${javafamily.utils.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>club.javafamily</groupId>
-                <artifactId>javafamily-utils-network</artifactId>
-                <version>${javafamily.utils.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>club.javafamily</groupId>
-                <artifactId>javafamily-utils-reflect</artifactId>
-                <version>${javafamily.utils.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>club.javafamily</groupId>
-                <artifactId>javafamily-utils-file</artifactId>
-                <version>${javafamily.utils.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>club.javafamily</groupId>
-                <artifactId>javafamily-utils-pdf-itext</artifactId>
-                <version>${javafamily.utils.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>club.javafamily</groupId>
-                <artifactId>feishu-notification-spring-boot-starter</artifactId>
-                <version>${notification.manager.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>club.javafamily</groupId>
-                <artifactId>dingtalk-notification-spring-boot-starter</artifactId>
-                <version>${notification.manager.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>club.javafamily</groupId>
-                <artifactId>ucloud-sms-notification-spring-boot-starter</artifactId>
-                <version>${notification.manager.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>club.javafamily</groupId>
-                <artifactId>tencent-sms-notification-spring-boot-starter</artifactId>
-                <version>${notification.manager.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>club.javafamily</groupId>
-                <artifactId>email-notification-spring-boot-starter</artifactId>
-                <version>${notification.manager.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>club.javafamily</groupId>
-                <artifactId>notification-manager-all</artifactId>
-                <version>${notification.manager.version}</version>
             </dependency>
 
             <dependency>
