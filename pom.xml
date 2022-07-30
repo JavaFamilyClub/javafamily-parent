@@ -13,6 +13,9 @@
     <url>https://github.com/JavaFamilyClub/javafamily-parent</url>
 
     <properties>
+        <MAVEN_GPG_KEY>key</MAVEN_GPG_KEY>
+        <MAVEN_GPG_PWD>pwd</MAVEN_GPG_PWD>
+
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jdk.version>1.8</jdk.version>
         <maven.compiler.source>${jdk.version}</maven.compiler.source>
@@ -426,10 +429,7 @@
                             </goals>
                         </execution>
                     </executions>
-                    <configuration>
-                        <keyname>46A46638E7A4C988603988FC9A698D0385DD4339</keyname>
-                        <passphrase>dreamLi0812!@#</passphrase>
-                    </configuration>
+                    
                 </plugin>
 
                 <plugin>
