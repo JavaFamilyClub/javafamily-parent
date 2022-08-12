@@ -47,7 +47,7 @@
         <java-jwt.version>3.4.0</java-jwt.version>
         <mybatis-plus-annotation.version>3.4.1</mybatis-plus-annotation.version>
         <druid-spring-boot-starter.version>1.2.8</druid-spring-boot-starter.version>
-        <okhttp.version>4.8.1</okhttp.version>
+        <okhttp.version>4.9.0</okhttp.version>
         <apach.math.version>6.5.0.Final</apach.math.version>
         <hutool.version>5.4.1</hutool.version>
         <metrics-prometheus.version>1.5.1</metrics-prometheus.version>
@@ -218,6 +218,12 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
                 <version>${fastJson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.squareup.okhttp3</groupId>
+                <artifactId>okhttp</artifactId>
+                <version>${okhttp.version}</version>
             </dependency>
 
             <dependency>
