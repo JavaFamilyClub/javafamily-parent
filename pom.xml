@@ -13,6 +13,8 @@
     <url>https://github.com/JavaFamilyClub/javafamily-parent</url>
 
     <properties>
+        <MAVEN_GPG_KEY>key</MAVEN_GPG_KEY>
+        <MAVEN_GPG_PWD>pwd</MAVEN_GPG_PWD>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jdk.version>1.8</jdk.version>
         <maven.compiler.source>${jdk.version}</maven.compiler.source>
@@ -451,6 +453,10 @@
                             </goals>
                         </execution>
                     </executions>
+                    <configuration>
+                        <keyname>${MAVEN_GPG_KEY}</keyname>
+                        <passphrase>${MAVEN_GPG_PWD}</passphrase>
+                    </configuration>
                 </plugin>
 
                 <plugin>
