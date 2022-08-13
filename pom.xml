@@ -460,10 +460,10 @@
                             </configuration>
                         </execution>
                     </executions>
-                    <configuration>
-                        <keyname>${MAVEN_GPG_KEY}</keyname>
-                        <passphrase>${MAVEN_GPG_PWD}</passphrase>
-                    </configuration>
+<!--                    <configuration>-->
+<!--                        <keyname>${MAVEN_GPG_KEY}</keyname>-->
+<!--                        <passphrase>${MAVEN_GPG_PWD}</passphrase>-->
+<!--                    </configuration>-->
                 </plugin>
 
                 <plugin>
