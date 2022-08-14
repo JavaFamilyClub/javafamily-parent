@@ -23,15 +23,6 @@ jobs:
       with:
         java-version: 8.0.302+8
         distribution: 'temurin'
-
-    - name: Build with Maven
-      run: mvn -B package --file pom.xml
-
-    - name: Set up Apache Maven Central
-      uses: actions/setup-java@v3
-      with: # running setup-java again overwrites the settings.xml
-        distribution: 'temurin'
-        java-version: 8.0.302+8
         server-id: javafamily-central-release # Value of the distributionManagement/repository/id field of the pom.xml
         server-username: MAVEN_USERNAME # env variable for username in deploy
         server-password: MAVEN_PASSWORD # env variable for token in deploy
@@ -39,7 +30,7 @@ jobs:
         gpg-passphrase: MAVEN_GPG_PASSPHRASE # env variable for GPG private key passphrase
 
     - name: Publish to Apache Maven Central
-      run: mvn deploy
+      run: mvn clean deploy
       env:
         MAVEN_USERNAME:  ${{ secrets.MAVEN_CENTER_USER_NAME }}
         MAVEN_PASSWORD: ${{ secrets.MAVEN_CENTER_PASSWORD }}
