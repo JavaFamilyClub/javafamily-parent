@@ -6,7 +6,7 @@
 
     <groupId>club.javafamily</groupId>
     <artifactId>javafamily-parent</artifactId>
-    <version>2.3.2-beta</version>
+    <version>2.3.2-beta.1</version>
     <packaging>pom</packaging>
     <name>javafamily-parent</name>
     <description>javafamily maven dependencies version management</description>
@@ -685,11 +685,6 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
             </plugin>
 
             <!-- 要将源码放上去，需要加入这个插件 -->
