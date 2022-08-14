@@ -1,42 +1,20 @@
-<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 
-         https://maven.apache.org/xsd/settings-1.0.0.xsd"> 
-    <localRepository/> 
-    <interactiveMode/> 
-    <usePluginRegistry/> 
-    <offline/> 
-    <pluginGroups/> 
-
-<servers>
-  <server>
-      <id>javafamily-central-release</id>
-      <username>${env.MAVEN_CENTER_USER_NAME}</username>
-      <password>${env.MAVEN_USERNAME}</password>
-  </server>
-
-  <server>
-      <id>javafamily-central-snapshot</id>
-      <username>${env.MAVEN_CENTER_USER_NAME}</username>
-      <password>${env.MAVEN_USERNAME}</password>
-  </server>
-</servers> 
-
-    <mirrors/> 
-    <proxies/> 
-
-<profiles> 
-<profile> 
-    <id>javafamily-central-release</id> 
-    <activation> 
-     <activeByDefault>true</activeByDefault> 
-    </activation> 
-    <properties> 
-     <gpg.executable>gpg</gpg.executable> 
-     <gpg.passphrase>${env.MAVEN_CENTER_PASSWORD}</gpg.passphrase>
-    </properties> 
-</profile> 
-</profiles> 
-
-    <activeProfiles/> 
-</settings> 
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <servers>
+        <server>
+            <id>javafamily-central-release</id>
+            <username>${env.MAVEN_CENTER_USER_NAME}</username>
+            <password>${env.MAVEN_CENTER_PASSWORD}</password>
+        </server>
+        <server>
+            <id>javafamily-central-snapshot</id>
+            <username>${env.MAVEN_CENTER_USER_NAME}</username>
+            <password>${env.MAVEN_CENTER_PASSWORD}</password>
+        </server>
+        <server>
+            <id>gpg.passphrase</id>
+            <passphrase>${env.MAVEN_GPG_PWD}</passphrase>
+        </server>
+    </servers>
+</settings>
